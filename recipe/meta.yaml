@@ -10,18 +10,16 @@ source:
   sha256: 0778a58bc45b0f96bd2559b51c3e451e8e52ef041e7d9c672d8b5595f662d0ce
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - jupytext = jupytext.cli:jupytext
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: "{{ PYTHON }} -m pip install . --no-deps -vvv"
 
 requirements:
   host:
-    - nbformat >=4.0.0
     - pip
     - python
-    - pyyaml
   run:
     - mock
     - nbformat >=4.0.0
