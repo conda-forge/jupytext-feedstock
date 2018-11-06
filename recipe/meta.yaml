@@ -10,22 +10,19 @@ source:
   sha256: 0778a58bc45b0f96bd2559b51c3e451e8e52ef041e7d9c672d8b5595f662d0ce
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - jupytext = jupytext.cli:jupytext
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: "{{ PYTHON }} -m pip install . --no-deps -vvv"
 
 requirements:
   host:
-    - nbformat >=4.0.0
     - pip
     - python
-    - pyyaml
   run:
     - mock
     - nbformat >=4.0.0
-    - python
     - pyyaml
     - testfixtures
 
@@ -37,10 +34,19 @@ test:
 
 about:
   home: https://github.com/mwouts/jupytext
+  doc_url: https://github.com/mwouts/jupytext/blob/master/README.md
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: Jupyter notebooks as Markdown documents, Julia, Python or R scripts
+  description: |
+    Represent Jupyter notebooks as Markdown documents or Julia, Python or R scripts. Convert any
+    script or Markdown document to a Jupyter notebook. Round trip conversion is robust and well tested.
+
+    Use these simpler representations to do version control and collaborate on Jupyter notebooks.
+    And refactor your notebooks encoded as scripts in your favorite IDE.
+
+    Jupytext is available directly in Jupyter Notebook and JupyterLab, and also on the command line.
 
 extra:
   recipe-maintainers:
