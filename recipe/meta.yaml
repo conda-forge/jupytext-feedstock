@@ -14,7 +14,7 @@ build:
   entry_points:
     - jupytext = jupytext.cli:jupytext
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vvv"
 
 requirements:
   host:
