@@ -9,6 +9,13 @@ Feedstock license: BSD 3-Clause
 
 Summary: Jupyter notebooks as Markdown documents, Julia, Python or R scripts
 
+Represent Jupyter notebooks as Markdown documents or Julia, Python or R scripts. Convert any
+script or Markdown document to a Jupyter notebook. Round trip conversion is robust and well tested.
+
+Use these simpler representations to do version control and collaborate on Jupyter notebooks.
+And refactor your notebooks encoded as scripts in your favorite IDE.
+
+Jupytext is available directly in Jupyter Notebook and JupyterLab, and also on the command line.
 
 
 Current build status
