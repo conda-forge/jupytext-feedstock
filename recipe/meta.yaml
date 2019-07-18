@@ -21,10 +21,8 @@ requirements:
     - pip
     - python
   run:
-    - mock
     - nbformat >=4.0.0
     - pyyaml
-    - testfixtures
 
 test:
   imports:
