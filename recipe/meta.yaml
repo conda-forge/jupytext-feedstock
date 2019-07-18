@@ -1,5 +1,5 @@
 {% set name = "jupytext" %}
-{% set version = "1.1.7" %}
+{% set version = "1.2.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9a1fd699a002639b4028428bde82ffdc2b305269d1000a4c27b8ae27842c663c
+  sha256: 0ece50c34e323424b70f38c37badd4eae82f5181618a622c685a3124b3e23303
 
 build:
   number: 0
@@ -21,10 +21,8 @@ requirements:
     - pip
     - python
   run:
-    - mock
     - nbformat >=4.0.0
     - pyyaml
-    - testfixtures
 
 test:
   imports:
