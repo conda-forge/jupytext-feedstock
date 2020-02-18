@@ -1,5 +1,5 @@
 {% set name = "jupytext" %}
-{% set version = "1.3.3" %}
+{% set version = "1.3.4" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5d7b089c67e54d097c92a40559a94b098bd8aa2a987ec15fd0d6d2328a7679bf
+  sha256: 23d56a92c8bf8166a27d87fe9049b2791d981b6a90cbec4cfc53ab381471324a
 
 build:
   number: 0
