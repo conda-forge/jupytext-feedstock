@@ -23,6 +23,7 @@ requirements:
   run:
     - nbformat >=4.0.0
     - pyyaml
+    - toml
 
 test:
   imports:
