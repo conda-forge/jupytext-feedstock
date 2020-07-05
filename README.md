@@ -5,7 +5,7 @@ Home: https://github.com/mwouts/jupytext
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Jupyter notebooks as Markdown documents, Julia, Python or R scripts
 
