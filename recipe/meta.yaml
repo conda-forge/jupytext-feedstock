@@ -12,7 +12,6 @@ build:
   number: 0
   entry_points:
     - jupytext = jupytext.cli:jupytext
-  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vvv
 
 requirements:
@@ -20,9 +19,12 @@ requirements:
     - pip
     - python
   run:
+    - python
     - nbformat >=4.0.0
     - pyyaml
     - toml
+    - mock  # [py<=27]
+    - markdown-it-py >=0.5.2,<0.6  # [py>=36]
 
 test:
   imports:
