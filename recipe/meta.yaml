@@ -1,13 +1,12 @@
 {% set name = "jupytext" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.0rc0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1cebc9f5975b4c08db3de6d7d61b35f8c33a24cf2c8c04eee7b8a7aab8ddc39b
+  url: https://github.com/mwouts/jupytext/archive/master.zip
 
 build:
   number: 0
