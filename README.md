@@ -5,9 +5,11 @@ Home: https://github.com/mwouts/jupytext
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupytext-feedstock/blob/master/LICENSE.txt)
 
 Summary: Jupyter notebooks as Markdown documents, Julia, Python or R scripts
+
+Documentation: https://github.com/mwouts/jupytext/blob/master/README.md
 
 Represent Jupyter notebooks as Markdown documents or Julia, Python or R scripts. Convert any
 script or Markdown document to a Jupyter notebook. Round trip conversion is robust and well tested.
