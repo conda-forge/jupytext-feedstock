@@ -10,7 +10,7 @@ source:
   sha256: c4a60e2ad086f542fe52fb8c6531d2f450ac710efac4fd0087da41bf1a06051e
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - jupytext = jupytext.cli:jupytext
   noarch: python
