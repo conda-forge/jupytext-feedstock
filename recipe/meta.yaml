@@ -18,11 +18,13 @@ build:
 
 requirements:
   build:
+    - python >=3.6
     - pip
     - python
     - jupyter-packaging
     - jupyterlab >=3.0
   run:
+    - python >=3.6
     - nbformat >=4.0.0
     - pyyaml
     - toml
