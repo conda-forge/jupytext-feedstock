@@ -10,7 +10,7 @@ source:
   sha256: d10e6826125e203c2c70b93f04768944cd86d110bd69dc8e247ece5d06174d63
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - jupytext = jupytext.cli:jupytext
   noarch: python
@@ -29,7 +29,7 @@ requirements:
     - nbformat >=4.0.0
     - pyyaml
     - toml
-    - markdown-it-py >=0.5.2,<0.6
+    - markdown-it-py >=0.6,<0.7
 
 test:
   imports:
