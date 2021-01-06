@@ -35,9 +35,9 @@ test:
     - jupytext
   commands:
     - jupytext --help
-    - test -f ${PREFIX}/share/jupyter/nbextensions/jupytext/index.js                                              # [unix]
+#    - test -f ${PREFIX}/share/jupyter/nbextensions/jupytext/index.js                                              # [unix]
     - test -f ${PREFIX}/share/jupyter/labextensions/jupyterlab-jupytext/package.json                              # [unix]
-    - if exist %PREFIX%\\share\\jupyter\\nbextensions\\jupytext\\index.js (exit 0) else (exit 1)                  # [win]
+#    - if exist %PREFIX%\\share\\jupyter\\nbextensions\\jupytext\\index.js (exit 0) else (exit 1)                  # [win]
     - if exist %PREFIX%\\share\\jupyter\\labextensions\\jupyterlab-jupytext\\package.json (exit 0) else (exit 1)  # [win]
 
 about:
