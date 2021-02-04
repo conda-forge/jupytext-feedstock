@@ -14,7 +14,7 @@ build:
   entry_points:
     - jupytext = jupytext.cli:jupytext
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vvv
+  script: BUILD_JUPYTERLAB_EXTENSION=1 {{ PYTHON }} -m pip install . --no-deps -vvv
 
 requirements:
   host:
