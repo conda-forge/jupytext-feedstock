@@ -1,5 +1,5 @@
 {% set name = "jupytext" %}
-{% set version = "1.11.1" %}
+{% set version = "1.11.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fa5bd965a5e5cb952714fd47d2ff5470910b2ef2f118e9a890de38cc706c934a
+  sha256: 7a32aa9edbc430653de3149de79c4ff4ee33ded2119b41ed476b5c93c9f6aff1
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - nbformat
     - pyyaml
     - toml
-    - markdown-it-py >=0.6,<0.7
+    - markdown-it-py >=1.0,<2.0
 
 test:
   imports:
