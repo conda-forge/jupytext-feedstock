@@ -1,5 +1,5 @@
 {% set name = "jupytext" %}
-{% set version = "1.15.2" %}
+{% set version = "1.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,39 +7,41 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c9976e24d834e991906c1de55af4b6d512d764f6372aabae45fc1ea72b589173
+  sha256: 94c7e67775e90e1792c39ab7fca4e0459bf7c35656123e8dc2e9e1b3e953baf8
 
 build:
   number: 0
   entry_points:
     - jupytext = jupytext.cli:jupytext
+    - jupytext-config = jupytext_config.__main__:main
   noarch: python
-  script: BUILD_JUPYTERLAB_EXTENSION=1 {{ PYTHON }} -m pip install . --no-deps -vvv
+  script: |
+    {{ PYTHON }} -m build
+    npm pack --pack-destination dist jupyterlab/packages/*
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
-    - python
+    - build
+    - wheel
     - nodejs
-    - jupyter-packaging
-    - jupyterlab >=3.0,<4.0
+    - jupyterlab >=4.0
   run:
-    - python >=3.6
+    - python >=3.8
     - nbformat
+    - mdit-py-plugins
+    - markdown-it-py >=1.0
+    - packaging
     - pyyaml
     - toml
-    - markdown-it-py >=1.0
-    - mdit-py-plugins
 
 test:
   imports:
     - jupytext
   commands:
     - jupytext --help
-    - test -f ${PREFIX}/share/jupyter/nbextensions/jupytext/index.js                                              # [unix]
     - test -f ${PREFIX}/share/jupyter/labextensions/jupyterlab-jupytext/package.json                              # [unix]
-    - if exist %PREFIX%\\share\\jupyter\\nbextensions\\jupytext\\index.js (exit 0) else (exit 1)                  # [win]
     - if exist %PREFIX%\\share\\jupyter\\labextensions\\jupyterlab-jupytext\\package.json (exit 0) else (exit 1)  # [win]
 
 about:
