@@ -15,9 +15,7 @@ build:
     - jupytext = jupytext.cli:jupytext
     - jupytext-config = jupytext_config.__main__:main
   noarch: python
-  script: |
-    {{ PYTHON }} -m build
-    npm pack --pack-destination dist jupyterlab/packages/*
+  script: python -m build
 
 requirements:
   host:
