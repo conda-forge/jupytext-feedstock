@@ -15,7 +15,7 @@ build:
     - jupytext = jupytext.cli:jupytext
     - jupytext-config = jupytext_config.__main__:main
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script: {{ PYTHON }} -m pip install . --no-deps -vvv
 
 requirements:
   host:
