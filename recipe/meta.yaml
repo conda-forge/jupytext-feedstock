@@ -10,7 +10,7 @@ source:
   sha256: 8627dd9becbbebd79cc4a4ed4727d89d78e606b4b464eab72357b3b029023a14
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - jupytext = jupytext.cli:jupytext
     - jupytext-config = jupytext_config.__main__:main
@@ -31,7 +31,7 @@ requirements:
     - markdown-it-py >=1.0
     - packaging
     - pyyaml
-    - toml
+    - tomli
 
 test:
   imports:
