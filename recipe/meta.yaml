@@ -31,7 +31,7 @@ requirements:
     - markdown-it-py >=1.0
     - packaging
     - pyyaml
-    - tomli;python_version <"3.11"
+    - tomli
 
 test:
   imports:
