@@ -26,6 +26,7 @@ requirements:
     - hatchling >=1.5.0
     # needed for jlpm
     - jupyterlab
+    - nodejs
     - pip
   run:
     - python >=3.8
