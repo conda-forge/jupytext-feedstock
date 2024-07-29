@@ -6,7 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/mwouts/jupytext/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 82fe5bb6ca03699da740f5100b85f7bec77384d4f770fdf215e96953680ec5d3
 
 build:
