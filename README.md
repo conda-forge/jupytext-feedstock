@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: Jupyter notebooks as Markdown documents, Julia, Python or R scripts
 
-Documentation: https://github.com/mwouts/jupytext/blob/master/README.md
+Documentation: https://github.com/mwouts/jupytext/blob/main/README.md
 
 Represent Jupyter notebooks as Markdown documents or Julia, Python or R scripts. Convert any
 script or Markdown document to a Jupyter notebook. Round trip conversion is robust and well tested.
