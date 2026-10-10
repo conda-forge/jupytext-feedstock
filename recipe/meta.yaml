@@ -22,7 +22,8 @@ requirements:
   host:
     - python {{ python_min }}
     - python-build
-    - hatch-jupyter-builder >=0.3.2
+    - hatch-jupyter-builder >=0.5
+    - jupyter-builder >=1.0.0
     - hatchling >=1.5.0
     # needed for jlpm
     - jupyterlab
