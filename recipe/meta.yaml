@@ -6,9 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://github.com/jupytext/jupytext/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 0ca51032588c72880f8dacfd877c6bdf230599d89ec9e9a2e5e85120d09f3b70
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ba1d143bb3751e054d3164376b148ee8fa74e1a860fc9411e1da93ff588b8a17
 
 build:
   number: 1
