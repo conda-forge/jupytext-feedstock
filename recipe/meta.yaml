@@ -1,16 +1,16 @@
 {% set name = "jupytext" %}
-{% set version = "1.19.6" %}
+{% set version = "1.19.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ba1d143bb3751e054d3164376b148ee8fa74e1a860fc9411e1da93ff588b8a17
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 5d440c437d7784edee1b2ff3a652420164c30f110cd8441189dfc2df766fde68
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - jupytext = jupytext.cli:jupytext
     - jupytext-config = jupytext_config.__main__:main
